@@ -16,9 +16,9 @@ button[0].addEventListener("click", function () {
         friend.appendChild(friendName)
         container.appendChild(friend)
         document.body.appendChild(container)
-        let p = document.createElement("p")
-        container.appendChild(p)
         for (let j = 99; j > 0; j--) {
+            let p = document.createElement("p")
+            container.appendChild(p)
             if (j >= 3) {
                 pText = document.createTextNode(j + lyrics[0] + lyrics[1] + "," + " " + j + lyrics[0] + "; " + friends[i] + lyrics[2] + (j - 1) + lyrics[0] + lyrics[1])
             } else if (j == 2) {
